@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-btn{
+    background-color: rgb(233, 163, 13);
+    padding: 0.3rem 1.5rem;
+    border: 1px solid rgb(233, 163, 13);
+    border-radius: 1.2rem;
+    /* transition: all 0.4s; */
+}
+
+.navbar-expand-lg {
+    background-color: rgba(247, 244, 244, 0.5);
+}
+.main-btn:hover{
+    background-color: white;
+    color: rgb(233, 163, 13);
+    border: 1px solid rgb(233, 163, 13);
+    box-sizing: border-box;
+}
+.navbar-nav a {
+    color: black;
+    margin-right: 20px;
+}
+.active {
+    color: rgb(233, 163, 13) !important;
+}
+.navbar-toggler {
+    padding: 1rem;
+    color: rgb(233, 163, 13) !important;
+}
+.navbar-toggler {
+    outline: white;
+}
+/* home section  */
+.home-section {
+    background-image: url("bg/top.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+.home-contant h1, h6, p {
+    color: white;
+}
+.home-contant {
+    line-height: 2.5rem;
+    padding: 10rem 3rem;
+}
+/* category */
+.link-category-product{
+   position: relative;
+   display: block;
+   z-index: 1;
+}
+.link-category-product::before{
+    position: absolute;
+    content:"" ;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid green;
+    z-index: -1;
+    transform: translatex(-50%) translateY(-50%) scale(0);
+    background-color: rgb(233, 163, 13);
+   transition: all .4s ease;
+}
+.card:hover .link-category-product::before{
+    transform: translatex(-50%) translateY(-50%) scale(1);
+}
+.card {
+    border: none !important;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.card:hover{
+    color: rgb(233, 163, 13);
+}
+.bg-colr-kaleya {
+    background-color: rgb(233, 231, 118);
+}
+.card-conta {
+    color: black;
+    font-size: 0.8rem;
+}
+.card-conta:hover{
+color: black;
+}
+/* testimonial */
+.testimonial {
+    background-color: green;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+.testimonial h5, p {
+    color: white;
+}
+.testimonial .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: black;
+    border-radius: 0.937rem;
+    text-align: center;
+}
+.testimonial .carousel-item img {
+    max-width: 5rem;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0.3125rem;
+
+}
+.testimonial .carousel-indicators {
+    bottom: -2.8125rem;
+}
+.testimonial .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+.footer-last {
+    background-color: black;
+}
+.input-btn {
+    width: 100%;
+    height: 50px;
+    background-color:black;
+}
+.input-btn input {
+    width: 70%;
+    height: 100%;
+}
+.icon-footer i{
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+    margin-left: rem;
+}
